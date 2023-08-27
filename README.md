@@ -2,6 +2,8 @@
 
 ![Thumbnail](https://github.com/ronald-luo/MetaPets/assets/67345874/503dbb8b-3bd3-4516-ab3d-0c0b03843068)
 
+See the demo here: [url](https://meta-pets-6nmmvcbdq-ronald-luo.vercel.app/)
+
 ## Introduction
 
 MetaPets is an AR/VR-based application designed to provide personalized therapeutic support through interactive virtual pets. The app combines elements of gamification, mental health care, and social sharing in a unique and meaningful user experience.
