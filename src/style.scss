@@ -1,0 +1,234 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+    font-family: 'Lexend', sans-serif;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.home-modal {
+    color: white;
+
+    .name-container {
+      display: flex;
+      align-items: center;
+
+      .profile-pic {
+        height: auto;
+        width: 25px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      #bell-icon {
+        margin-left: 10px;
+        fill: white;
+      }
+    }
+
+    .notification-container {
+      margin-top: 20px;
+      font-family: 'Karma', serif;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      .notification {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        background: rgb(102,71,236);
+        background: linear-gradient(90deg, rgba(102,71,236,1) 0%, rgba(0,0,0,0) 100%);
+        border-radius: 10px;
+        padding: 4px 4px;
+        animation-name: slideIn;
+        animation-duration: 1.5s;
+
+        @keyframes slideIn {
+          from {
+            transform: translateY(100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0%);
+            opacity: 1;
+          }
+        }
+        
+
+        .badge-icon {
+          margin-right: 10px;
+          height: 27px;
+          width: auto;
+        }
+
+        .achievement {
+          display: flex-column;
+          align-items: center;
+          
+          h2 {
+            margin: 0;
+            font-size: 16px;
+            line-height: 24px;
+          }
+          p {
+            font-size: 8px;
+            line-height: 16px;
+            color: darken(white, 20%);
+          }
+        }
+
+
+      }
+
+    }
+}
+
+.stats-modal {
+  animation-name: slideIn;
+  animation-duration: 1.5s;
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .summary-stats {
+    color: darken(white, 20%);
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+
+    .badge-icon {
+      height: 100px;
+      width: auto;
+      margin-right: 10px;
+    }
+  }
+}
+
+#leva__root {
+  opacity: 0;
+}
+
+.about-modal {
+  animation-name: slideIn;
+  animation-duration: 1.5s;
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
+}
+
+.header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .header__nav {
+    .nav__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      .nav__item {
+        margin-left: 1rem;
+
+        &--profile {
+          position: relative;
+
+          .profile__dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 0.5rem;
+            border-radius: 4px;
+
+            a {
+              display: block;
+              margin-bottom: 0.5rem;
+              color: white;
+              text-decoration: none;
+            }
+          }
+
+          &:hover {
+            .profile__dropdown {
+              display: block;
+            }
+          }
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
