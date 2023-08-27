@@ -40,7 +40,7 @@ AR/VR headset compatibility for immersive experience (Optional).
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/MetaPets.git
+git clone https://github.com/ronald-luo/MetaPets.git
 ```
 
 2. Navigate to the project folder and install dependencies:
